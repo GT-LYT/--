@@ -1,5 +1,13 @@
 # 案例图片与配属文档
 
+## 优先案例｜SCMP Arcade
+
+[A world of tastes：案例分析](./SCMP-201812A208/分析.md) · [打开原刊图形](https://multimedia.scmp.com/culture/article/SCMP-printed-graphics-memory/lonelyGraphics/201812A208.html)
+
+餐盘目录负责呈现对象；食材频率图归纳常见食材，地图交代空间背景。按整页的多模块分工归类。
+
+## 既有参考
+
 [A world of tastes（SCMP／PPT p16）](./CASE-0001/分析.md)
 
 ## 案例导航
