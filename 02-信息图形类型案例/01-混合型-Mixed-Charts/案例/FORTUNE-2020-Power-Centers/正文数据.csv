@@ -1,0 +1,5 @@
+metric,entity,value,unit,period,evidence_status,notes
+fortune500_company_count,New York metro area,65,companies,2020,transcribed_from_caption,2020 Fortune 500 list
+revenue_share,New York metro area,12.5,percent,2019,transcribed_from_caption,share_of_all_fortune500_revenue
+previous_comparison_value,New York metro area,1800,USD_billion,2019,approximate_caption,nearly_1.8_trillion
+article_top_metro_count,United States,15,metro_areas,2019,transcribed_from_subtitle,cumulative_revenue_ranking

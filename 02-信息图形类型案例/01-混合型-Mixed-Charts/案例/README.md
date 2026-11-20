@@ -1,5 +1,10 @@
 # 案例图片与配属文档
 
+## Fortune 500：地图＋营收比例圆
+
+[详细分析](./FORTUNE-2020-Power-Centers/分析.md) · [基础数据](./FORTUNE-2020-Power-Centers/基础数据.csv) · [原图与版权状态](./FORTUNE-2020-Power-Centers/README.md)
+
+
 ## 优先案例｜SCMP Arcade
 
 [A world of tastes：案例分析](./SCMP-201812A208/分析.md) · [打开原刊图形](https://multimedia.scmp.com/culture/article/SCMP-printed-graphics-memory/lonelyGraphics/201812A208.html)
