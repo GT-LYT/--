@@ -1,0 +1,4 @@
+metric_id,value,unit,year,geography,source_edition,evidence_status
+GLOBAL_ADDITION,585,GW,2024,Global,IRENA_2025_March,source_direct
+SOLAR_ADDITION,452,GW,2024,Global,IRENA_2025_March,source_direct
+WIND_ADDITION,113,GW,2024,Global,IRENA_2025_March,source_direct
