@@ -1,6 +1,0 @@
-metric_id,value,unit,calculation_basis,evidence_status
-OTHER_ADDITION,20,GW,585_minus_452_minus_113,derived
-SOLAR_SHARE,77.264957,percent,452_divided_by_585_times_100,derived
-WIND_SHARE,19.316239,percent,113_divided_by_585_times_100,derived
-OTHER_SHARE,3.418803,percent,20_divided_by_585_times_100,derived
-SOLAR_WIND_SHARE,96.581197,percent,565_divided_by_585_times_100,derived

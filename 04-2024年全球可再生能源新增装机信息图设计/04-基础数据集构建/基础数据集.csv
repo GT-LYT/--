@@ -1,4 +1,0 @@
-category_id,category_zh,category_en,added_capacity,unit,year,geography,source_edition,evidence_status
-SOLAR,太阳能,Solar,452,GW,2024,Global,IRENA_2025_March,source_direct
-WIND,风能,Wind,113,GW,2024,Global,IRENA_2025_March,source_direct
-OTHER,其他可再生能源,Other renewables,20,GW,2024,Global,IRENA_2025_March,calculated_residual

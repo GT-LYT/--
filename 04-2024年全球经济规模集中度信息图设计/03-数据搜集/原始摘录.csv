@@ -1,0 +1,12 @@
+record_id,rank,economy_code,economy_en,gdp_usd_million,year,unit,source_release,record_type
+GDP01,1,USA,United States,28750956,2024,USD_million,2025-12-15,economy
+GDP02,2,CHN,China,18743803,2024,USD_million,2025-12-15,economy
+GDP03,3,DEU,Germany,4685593,2024,USD_million,2025-12-15,economy
+GDP04,4,JPN,Japan,4027598,2024,USD_million,2025-12-15,economy
+GDP05,5,IND,India,3909892,2024,USD_million,2025-12-15,economy
+GDP06,6,GBR,United Kingdom,3686033,2024,USD_million,2025-12-15,economy
+GDP07,7,FRA,France,3160443,2024,USD_million,2025-12-15,economy
+GDP08,8,ITA,Italy,2380825,2024,USD_million,2025-12-15,economy
+GDP09,9,CAN,Canada,2243637,2024,USD_million,2025-12-15,economy
+GDP10,10,BRA,Brazil,2185822,2024,USD_million,2025-12-15,economy
+WORLD,,WLD,World,110982661,2024,USD_million,2025-12-15,world_aggregate
