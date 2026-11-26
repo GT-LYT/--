@@ -1,9 +1,0 @@
-metric_id,value,unit,numerator_usd_million,denominator_usd_million,derivation,evidence_status
-WORLD_GDP,110982661,USD_million,,,world_row,source_direct
-TOP10_GDP,73774602,USD_million,,,sum_top10,derived
-REST_WORLD_GDP,37208059,USD_million,,,world_minus_top10,derived
-TOP10_SHARE,66.4740,percent,73774602,110982661,numerator_divide_denominator_times100,derived
-REST_WORLD_SHARE,33.5260,percent,37208059,110982661,numerator_divide_denominator_times100,derived
-US_CN_SHARE,42.7948,percent,47494759,110982661,numerator_divide_denominator_times100,derived
-US_SHARE,25.9058,percent,28750956,110982661,numerator_divide_denominator_times100,derived
-CHINA_SHARE,16.8889,percent,18743803,110982661,numerator_divide_denominator_times100,derived
