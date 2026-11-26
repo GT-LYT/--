@@ -1,37 +1,45 @@
 # 04｜Gestalt 格式塔知觉组织原则研究
 
-**状态：目录与研究规范已经建立；10项定义与概念正文为待用户确认草稿，尚未上传。**
+**状态：正式定义文档已通过用户确认并写入；10项内容均已配置概念、视觉编码、设计分析、教学案例、反例及实践检验方法。**
 
-本目录研究 Gestalt 如何影响**信息图形的视觉分组、视觉层级、阅读路线与信息理解**，不是 01 的第六种数据逻辑，也不是 02 的一个作品表现类型。Gestalt 没有学界统一的固定法则数量，不同视觉设计教材的编排不同。此处先暂列10项**研究范围**，等待用户确认用词及数量，再将经过审定的定义写入各规则目录。
+## 研究边界
+Gestalt 对视觉元素如何组织为整体进行解释。**本仓库采用 10 项课程研究框架，不代表心理学公认只有十条定律**。接近、相似、连续、闭合等常见法则与后来的共同区域、显式连接线索，以及作为高阶整体组织倾向的 Prägnanz，不宜被当作历史上同一阶段提出的“十条原始法则”。
 
-## 待确认研究项目
+- **01 信息图形数据逻辑：** 数据以什么关系组织（时间、层级、编目、字母键、地理）。
+- **02 信息图形表现类型：** 用什么图形表现（比较、混合、列表、地标等）。
+- **04 Gestalt：** 读者为什么把这些点、线、区块和文字看成一个组，以及何时产生误读。
 
-- [01 接近律（Proximity）](./01-Proximity/README.md)
-- [02 相似律（Similarity）](./02-Similarity/README.md)
-- [03 良好连续律（Continuity）](./03-Continuity/README.md)
-- [04 闭合律（Closure）](./04-Closure/README.md)
-- [05 图形背景关系（Figure-Ground）](./05-Figure-Ground/README.md)
-- [06 共同命运律（Common-Fate）](./06-Common-Fate/README.md)
-- [07 共同区域律（Common-Region）](./07-Common-Region/README.md)
-- [08 连接律（Connectedness）](./08-Connectedness/README.md)
-- [09 对称与秩序（Symmetry-Order）](./09-Symmetry-Order/README.md)
-- [10 简洁律（Pragnanz）](./10-Pragnanz/README.md)
+## 已确认的10项概念
 
-## 每项标准资料结构
+| 编号 | 规则 | 机制 | 阅读入口 |
+|---|---|---|---|
+| 01 | [接近律（Law of Proximity）](./01-Proximity/README.md) | 空间邻近型分组 | [分析](./01-Proximity/设计分析/README.md) · [教学案例](./01-Proximity/案例/README.md) · [实践](./01-Proximity/设计实践经验/README.md) |
+| 02 | [相似律（Law of Similarity）](./02-Similarity/README.md) | 外观相似型分组 | [分析](./02-Similarity/设计分析/README.md) · [教学案例](./02-Similarity/案例/README.md) · [实践](./02-Similarity/设计实践经验/README.md) |
+| 03 | [良好连续律（Law of Good Continuation）](./03-Continuity/README.md) | 路径与方向连续型组织 | [分析](./03-Continuity/设计分析/README.md) · [教学案例](./03-Continuity/案例/README.md) · [实践](./03-Continuity/设计实践经验/README.md) |
+| 04 | [闭合律（Law of Closure）](./04-Closure/README.md) | 缺失轮廓补全 | [分析](./04-Closure/设计分析/README.md) · [教学案例](./04-Closure/案例/README.md) · [实践](./04-Closure/设计实践经验/README.md) |
+| 05 | [图形—背景关系（Figure–Ground）](./05-Figure-Ground/README.md) | 前景与背景分化 | [分析](./05-Figure-Ground/设计分析/README.md) · [教学案例](./05-Figure-Ground/案例/README.md) · [实践](./05-Figure-Ground/设计实践经验/README.md) |
+| 06 | [共同命运律（Law of Common Fate）](./06-Common-Fate/README.md) | 共同行为分组 | [分析](./06-Common-Fate/设计分析/README.md) · [教学案例](./06-Common-Fate/案例/README.md) · [实践](./06-Common-Fate/设计实践经验/README.md) |
+| 07 | [共同区域律（Law of Common Region）](./07-Common-Region/README.md) | 边界内分组 | [分析](./07-Common-Region/设计分析/README.md) · [教学案例](./07-Common-Region/案例/README.md) · [实践](./07-Common-Region/设计实践经验/README.md) |
+| 08 | [连接律（Law of Connectedness）](./08-Connectedness/README.md) | 显式连接型分组 | [分析](./08-Connectedness/设计分析/README.md) · [教学案例](./08-Connectedness/案例/README.md) · [实践](./08-Connectedness/设计实践经验/README.md) |
+| 09 | [对称与秩序（Symmetry and Order）](./09-Symmetry-Order/README.md) | 结构均衡型组织 | [分析](./09-Symmetry-Order/设计分析/README.md) · [教学案例](./09-Symmetry-Order/案例/README.md) · [实践](./09-Symmetry-Order/设计实践经验/README.md) |
+| 10 | [简洁律（Law of Prägnanz）](./10-Pragnanz/README.md) | 高阶整体组织/良好形态 | [分析](./10-Pragnanz/设计分析/README.md) · [教学案例](./10-Pragnanz/案例/README.md) · [实践](./10-Pragnanz/设计实践经验/README.md) |
 
-每个规则独立建立：
-- `README.md`：研究状态与将来正式定义入口；
-- `案例/README.md`：原作、来源链接、授权、作品归属与可核对的原图；
-- `设计分析/README.md`：观察证据、知觉分组机制、点线面色彩编码、反例与局限；
-- `设计实践经验/README.md`：实验版本、参数、读者测试、结果和迭代建议。
+## 入库与知识回写规范
+1. 每个真实图形案例先有可靠原图与来源，再检查该规则在局部是否成立；对不存在原图的作品仅作**教学情境**或**候选案例**。
+2. 不以视觉分组直接推断真实同类、时序、因果、资金流向等数据事实。
+3. 每次新增案例同时回写 `案例`、`设计分析`、`设计实践经验` 及必要的 `README.md`。
+4. 视觉编码须同时记录“字段对应关系”和“仅为装饰/布局”的部分；色彩、粗细、面积不天然表示数量。
+5. 未完成的读者测试须标“未测试”；不虚构实验百分比、受众反馈与结果。
+6. 保留作者、原刊、数据版本、图片许可及内部链接，不复制无授权原图。
 
-**注意：** 图上看起来“相连”“相似”“靠近”是感知线索，不等于数据真实有因果、类别或数量关系。每张图必须同时区分作品的 `01数据逻辑`、`02表现标签` 与 `04知觉组织规则`。
+[逐图分析模板](./00-案例分析模板.md) · [仓库首页](../README.md) · [02表现类型目录](../02-信息图形类型案例/README.md)
 
-## 研究出处
+## 研究资料（来源，不是本项目自创法则的证据）
+- [Nielsen Norman Group — Principles of Visual Design](https://www.nngroup.com/articles/principles-visual-design/)
+- [NN/g — Principle of Proximity](https://www.nngroup.com/articles/gestalt-proximity/)
+- [NN/g — Principle of Similarity](https://www.nngroup.com/articles/gestalt-similarity/)
+- [NN/g — Principle of Common Region](https://www.nngroup.com/articles/common-region/)
+- [Interaction Design Foundation — Gestalt Principles](https://ixdf.org/literature/topics/gestalt-principles)
+- [Figma — Gestalt Principles](https://www.figma.com/resource-library/gestalt-principles/)
 
-- [Nielsen Norman Group: Gestalt proximity](https://www.nngroup.com/articles/gestalt-proximity/)
-- [Nielsen Norman Group: Principles of Visual Design](https://www.nngroup.com/articles/principles-visual-design/)
-- [Interaction Design Foundation: Gestalt principles](https://ixdf.org/literature/topics/gestalt-principles)
-- [Figma: Gestalt principles](https://www.figma.com/resource-library/gestalt-principles/)
-
-[返回仓库首页](../README.md)
+上述英文资料不使用完全相同的编号、术语细分或法则数量；本库的“10项”是明确选择的教学索引。
