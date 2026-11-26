@@ -22,6 +22,6 @@
 - [NN/g 视觉设计原则汇总](https://www.nngroup.com/articles/principles-visual-design/)。
 
 ## 对应仓库的既有分析（有则链接，非原文同作品保证）
-- [Fortune 500 图形分析](../../../02-信息图形类型案例/01-混合型-Mixed-Charts/案例/FORTUNE-2020-Power-Centers/分析.md)：可分析白色陆地与灰蓝背景的图底层级。
+- [Fortune 500 图形分析](../../../../02-%E4%BF%A1%E6%81%AF%E5%9B%BE%E5%BD%A2%E7%B1%BB%E5%9E%8B%E6%A1%88%E4%BE%8B/01-%E6%B7%B7%E5%90%88%E5%9E%8B-Mixed-Charts/%E6%A1%88%E4%BE%8B/FORTUNE-2020-Power-Centers/%E5%88%86%E6%9E%90.md)：可分析白色陆地与灰蓝背景的图底层级。
 
 **后续真实案例入库条件：** 正式作品名称、作者、出处、原图链接、分析区域、01 与 02 的归属、图形证据；不以缺少图像的文字臆测替代。

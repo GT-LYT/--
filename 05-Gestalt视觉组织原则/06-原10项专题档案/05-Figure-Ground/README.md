@@ -31,11 +31,11 @@
 **本原则的可执行检验：** 缩略图识别第一视觉焦点，灰度检查、文本对比检查和地图小点可见性检查。
 
 ## 六｜关联文档
-- [案例与证据登记](./案例/README.md)
-- [视觉机制与误用分析](./设计分析/README.md)
-- [设计实践、验证与回写](./设计实践经验/README.md)
+- [案例与证据登记](%E6%A1%88%E4%BE%8B/README.md)
+- [视觉机制与误用分析](%E8%AE%BE%E8%AE%A1%E5%88%86%E6%9E%90/README.md)
+- [设计实践、验证与回写](%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5%E7%BB%8F%E9%AA%8C/README.md)
 - [全库 Gestalt 规则索引](../README.md)
-- [跨案例分析模板](../00-案例分析模板.md)
+- [跨案例分析模板](../00-%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90%E6%A8%A1%E6%9D%BF.md)
 
 ## 七｜参考文献
 - [Figure–Ground：优先参考](https://www.nngroup.com/articles/principles-visual-design/)
