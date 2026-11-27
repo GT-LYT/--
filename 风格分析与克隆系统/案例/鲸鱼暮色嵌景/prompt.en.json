@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "package_kind": "template",
+    "task_id": "T-DUSK-INLAY",
+    "mode": "apply",
+    "style_ref": {
+      "id": "SP-DUSK-INLAY",
+      "version": "1.0"
+    },
+    "required_rule_ids": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05"
+    ],
+    "variables": [
+      "carrier",
+      "identity_marks",
+      "inner_world",
+      "landmark",
+      "junction",
+      "receiver"
+    ],
+    "language": "en"
+  },
+  "style": [
+    {
+      "id": "S01",
+      "priority": "must",
+      "rule_id": "R01",
+      "text": "Leave continuous matte near-black space around a single recognizable silhouette enclosing a miniature world. Preserve one or two identifying features."
+    },
+    {
+      "id": "S02",
+      "priority": "must",
+      "rule_id": "R02",
+      "text": "Use indigo and blue-violet for depth, repeat rose-magenta inside and outside, and reserve peach-gold and near-white for peak light. Vary the thin cool rim."
+    },
+    {
+      "id": "S03",
+      "priority": "must",
+      "rule_id": "R03",
+      "text": "Layer a broad atmospheric mass, a narrow detailed landmark band and broader foreground strokes. Resolve the local anchor and simplify its surroundings."
+    },
+    {
+      "id": "S04",
+      "priority": "must",
+      "rule_id": "R04",
+      "text": "Model the carrier with thin directional strokes, use thicker opaque strokes inside, and orient broken foreground marks along the receiving surface. Confine flecks near the junction."
+    },
+    {
+      "id": "S05",
+      "priority": "must",
+      "rule_id": "R05",
+      "text": "Keep most of the silhouette traceable. Dissolve one plausible junction so the same inner light continues outward and fades into black."
+    }
+  ],
+  "character": [
+    {
+      "id": "C01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "Draw {{carrier}}, recognizable by {{identity_marks}}."
+    }
+  ],
+  "environment": [
+    {
+      "id": "E01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "Enclose {{inner_world}} within the silhouette, with {{landmark}} as its small focal landmark."
+    }
+  ],
+  "narrative": [
+    {
+      "id": "N01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "At {{junction}}, carry the inner light onto {{receiver}} and follow its direction."
+    }
+  ],
+  "mood": [],
+  "technical": {
+    "delivery": {
+      "aspect_ratio": "3:4",
+      "quantity": 1,
+      "format": "PNG",
+      "text_mode": "none",
+      "exact_text": []
+    },
+    "instructions": []
+  }
+}

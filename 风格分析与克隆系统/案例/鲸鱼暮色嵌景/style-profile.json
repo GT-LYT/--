@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-DUSK-INLAY",
+  "version": "1.0",
+  "name": "近黑背景中的暮色嵌景厚涂",
+  "status": "candidate",
+  "scope": "单参考作品级风格，已做鲸形和机车迁移各一次。",
+  "parent": null,
+  "references": [
+    {
+      "id": "A",
+      "role": "style_reference",
+      "source": "用户聊天中上传的鲸腹村庄参考图",
+      "archive_status": "pending_original_file"
+    }
+  ],
+  "rules": [
+    {
+      "id": "R01",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "rule": "近黑哑纹背景留出连续暗面，以单一、可辨的巨形围住微型世界，保留一两处载体结构。",
+      "requires": [],
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "鲸形与周围黑底"
+        }
+      ],
+      "allowed_variation": "替换载体、内景和外部承接面，保留视觉关系。",
+      "check": "缩略图可辨载体，放大可读内景"
+    },
+    {
+      "id": "R02",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "rule": "靛紫和蓝紫建立暗面与空间，玫红连接内外光色，少量桃金和近白作峰值。细冷缘光强弱有别。",
+      "requires": [],
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "晚霞、鲸沿与水面"
+        }
+      ],
+      "allowed_variation": "替换载体、内景和外部承接面，保留视觉关系。",
+      "check": "暗底、主色与少量高亮有层级"
+    },
+    {
+      "id": "R03",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "rule": "内景由大气色面、窄幅精细地标和较宽的前景笔触分层。局部清楚，其余简化。",
+      "requires": [],
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "天空、村庄横带与前景"
+        }
+      ],
+      "allowed_variation": "替换载体、内景和外部承接面，保留视觉关系。",
+      "check": "大气色面与细节带、前景笔触分工清楚"
+    },
+    {
+      "id": "R04",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "rule": "载体以顺形薄笔塑造，内景用较厚的不透明叠笔；前景断笔顺承接面走势，飞点限于接口附近。",
+      "requires": [],
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "鲸喉细纹、厚云、水面断笔"
+        }
+      ],
+      "allowed_variation": "替换载体、内景和外部承接面，保留视觉关系。",
+      "check": "三个区域的笔向和厚薄有差别"
+    },
+    {
+      "id": "R05",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "rule": "绝大部分边界可追踪，在一处可信接口逐渐消隐，让同一内光延续到外部并衰减回黑。",
+      "requires": [],
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "腹部与水线交界"
+        }
+      ],
+      "allowed_variation": "替换载体、内景和外部承接面，保留视觉关系。",
+      "check": "内光在一处可信接口向外延续"
+    }
+  ]
+}

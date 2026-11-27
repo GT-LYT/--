@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "package_kind": "template",
+  "task_id": "T-DUSK-INLAY",
+  "mode": "apply",
+  "style_ref": {
+    "id": "SP-DUSK-INLAY",
+    "version": "1.0"
+  },
+  "required_rule_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05"
+  ],
+  "variables": [
+    "carrier",
+    "identity_marks",
+    "inner_world",
+    "landmark",
+    "junction",
+    "receiver"
+  ],
+  "delivery": {
+    "aspect_ratio": "3:4",
+    "quantity": 1,
+    "format": "PNG",
+    "text_mode": "none",
+    "exact_text": []
+  },
+  "clauses": [
+    {
+      "id": "S01",
+      "priority": "must",
+      "rule_id": "R01",
+      "section": "style",
+      "zh": "近黑哑纹背景留出连续暗面，以单一、可辨的巨形围住微型世界，保留一两处载体结构。",
+      "en": "Leave continuous matte near-black space around a single recognizable silhouette enclosing a miniature world. Preserve one or two identifying features."
+    },
+    {
+      "id": "S02",
+      "priority": "must",
+      "rule_id": "R02",
+      "section": "style",
+      "zh": "靛紫和蓝紫建立暗面与空间，玫红连接内外光色，少量桃金和近白作峰值。细冷缘光强弱有别。",
+      "en": "Use indigo and blue-violet for depth, repeat rose-magenta inside and outside, and reserve peach-gold and near-white for peak light. Vary the thin cool rim."
+    },
+    {
+      "id": "S03",
+      "priority": "must",
+      "rule_id": "R03",
+      "section": "style",
+      "zh": "内景由大气色面、窄幅精细地标和较宽的前景笔触分层。局部清楚，其余简化。",
+      "en": "Layer a broad atmospheric mass, a narrow detailed landmark band and broader foreground strokes. Resolve the local anchor and simplify its surroundings."
+    },
+    {
+      "id": "S04",
+      "priority": "must",
+      "rule_id": "R04",
+      "section": "style",
+      "zh": "载体以顺形薄笔塑造，内景用较厚的不透明叠笔；前景断笔顺承接面走势，飞点限于接口附近。",
+      "en": "Model the carrier with thin directional strokes, use thicker opaque strokes inside, and orient broken foreground marks along the receiving surface. Confine flecks near the junction."
+    },
+    {
+      "id": "S05",
+      "priority": "must",
+      "rule_id": "R05",
+      "section": "style",
+      "zh": "绝大部分边界可追踪，在一处可信接口逐渐消隐，让同一内光延续到外部并衰减回黑。",
+      "en": "Keep most of the silhouette traceable. Dissolve one plausible junction so the same inner light continues outward and fades into black."
+    },
+    {
+      "id": "C01",
+      "priority": "must",
+      "rule_id": null,
+      "section": "character",
+      "zh": "画出 {{carrier}}，以 {{identity_marks}} 保证外形可辨。",
+      "en": "Draw {{carrier}}, recognizable by {{identity_marks}}."
+    },
+    {
+      "id": "E01",
+      "priority": "must",
+      "rule_id": null,
+      "section": "environment",
+      "zh": "把 {{inner_world}} 纳入轮廓，以 {{landmark}} 作内部的小型地标。",
+      "en": "Enclose {{inner_world}} within the silhouette, with {{landmark}} as its small focal landmark."
+    },
+    {
+      "id": "N01",
+      "priority": "must",
+      "rule_id": null,
+      "section": "narrative",
+      "zh": "从 {{junction}} 将内光送到 {{receiver}}，让笔触顺应它的方向。",
+      "en": "At {{junction}}, carry the inner light onto {{receiver}} and follow its direction."
+    }
+  ]
+}
