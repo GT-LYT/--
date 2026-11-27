@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "package_kind": "task",
+    "task_id": "T-library",
+    "mode": "change_theme",
+    "style_ref": {
+      "id": "SP-01",
+      "version": "1.0"
+    },
+    "required_rule_ids": [
+      "R01",
+      "R02",
+      "R03"
+    ],
+    "variables": [],
+    "language": "zh"
+  },
+  "style": [
+    {
+      "id": "S01",
+      "priority": "must",
+      "rule_id": "R01",
+      "text": "以靛蓝为主色，唯一醒目的橙红落在插入书页的书签。"
+    },
+    {
+      "id": "S02",
+      "priority": "must",
+      "rule_id": "R02",
+      "text": "将细节集中在书签、页缘与指尖，外围保持疏朗。"
+    },
+    {
+      "id": "S03",
+      "priority": "must",
+      "rule_id": "R03",
+      "text": "用粗细分明的靛蓝线条与平面墨块塑形，米白纸面保留轻微纤维。"
+    }
+  ],
+  "character": [
+    {
+      "id": "C01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "以一本摊开的图书与一位读者的手为主体，呈现读者用一枚书签标记阅读位置。"
+    }
+  ],
+  "environment": [
+    {
+      "id": "E01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "场景为雨后社区图书馆的阅读桌，后景只交代必要内容。"
+    }
+  ],
+  "narrative": [
+    {
+      "id": "N01",
+      "priority": "should",
+      "rule_id": null,
+      "text": "从画幅上方的靛蓝标题读到翻开的书页，最后停在橙红书签上。"
+    }
+  ],
+  "mood": [],
+  "technical": {
+    "delivery": {
+      "aspect_ratio": "4:5",
+      "quantity": 1,
+      "format": null,
+      "text_mode": "exact",
+      "exact_text": [
+        "雨后阅读日"
+      ]
+    },
+    "instructions": [
+      {
+        "id": "T01",
+        "priority": "must",
+        "rule_id": null,
+        "text": "标题置于画幅上方，使用可读的靛蓝字形。"
+      }
+    ]
+  }
+}

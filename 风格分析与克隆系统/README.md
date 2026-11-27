@@ -1,0 +1,49 @@
+# 风格分析与风格克隆系统
+
+同一套规则支持网页版加载、仓库启动和跨会话调用。系统提取可观察的视觉关系，保留风格核心，按新题材重新安排主体、场景和焦点，再交付四版提示词。
+
+## 三种启动方式
+
+| 场景 | 操作 |
+|---|---|
+| 网页版大模型 | 上传 [STYLE_CLONE_SYSTEM.md](STYLE_CLONE_SYSTEM.md) 和参考图或已有档案，发送「启动风格分析和克隆系统」。单文件包含完整流程和两种 JSON 结构。需要纯文本附件时可用相同 UTF-8 内容保存为 .txt。 |
+| 从仓库启动 | 交给能读仓库文件的模型，发送「读取根目录 SYSTEM.md，启动风格分析和克隆系统」。根入口会继续读取本目录的完整运行规范。已有风格时再给档案路径或 ID 和版本。仓库入口见 [AGENTS.md](AGENTS.md)。 |
+| 跨会话直接调用 | 把 [MEMORY_CARD.md](MEMORY_CARD.md) 提供给支持记忆、自定义指令或项目指令的模型。只保存这张卡即可分流。经常复用的风格同时保存档案位置，或保存卡片所示的核心规则摘要。之后发送「启动风格分析和克隆系统，用 [风格名] 做 [主题]」。 |
+
+网页版和仓库都可执行提取、迁移、扩展、换题、修订和审查。附图承担风格、内容或版式参考时，可直接在请求里注明。只有要求出图时才另外调用可用的图像工具。
+
+## 常用请求
+
+```text
+启动风格分析和克隆系统。分析附件中两张风格参考，输出风格档案和四版通用模板。
+```
+
+```text
+启动风格分析和克隆系统。调用 SP-01@1.0，换成社区图书馆活动海报。
+4:5，1 张，标题原文「雨后阅读日」，保留风格核心，输出四版提示词。
+```
+
+## 仓库文件
+
+- [STYLE_CLONE_SYSTEM.md](STYLE_CLONE_SYSTEM.md) 是运行规范和字段约定。
+- [MEMORY_CARD.md](MEMORY_CARD.md) 是跨会话调用卡，含可选的风格摘要。
+- [tools/prompt_package.py](tools/prompt_package.py) 在 Python 3.8 及以上版本校验提示词数据，并从它导出四个版本。依赖为 Python 标准库。
+- [examples](examples) 含一个示范风格档案、一个通用模板、三个主题任务和一组导出结果。示范的参考是虚构材料，供演示规则映射和文本测试。
+- [tools/smoke_test.py](tools/smoke_test.py) 验证内容覆盖、版本检查及常见错误处理。
+
+## 验证和导出
+
+先让模型按运行规范产出 `prompt_spec`。已经有文件时，在本目录运行：
+
+```bash
+python3 tools/prompt_package.py examples/library-poster.json --profile examples/style-profile.json --out exports/library-poster
+python3 tools/smoke_test.py
+```
+
+省略 `--out` 时只校验。指定 `--profile` 可同时核对版本、规则 ID、依赖及必须核心覆盖。输出目录使用新路径，避免覆盖既有记录。用 `--full-language en` 把完整自然语言版切换到英文，其余三版保持原语言。
+
+输出为 `prompt.zh.json`、`prompt.en.json`、`prompt.short.zh.txt` 和 `prompt.full.zh.txt`（或 `prompt.full.en.txt`）。编译器保证来自同一份结构、交付约束和指令集合。中英自然语义、风格档案的视觉证据和真实生成质量仍按运行规范审查。
+
+## 保存与复用
+
+将自己的风格档案和提示词数据另存，以 `档案ID@版本` 引用。复用档案时，每次新建任务并保存实际提交给生成工具的文本、参考输入及验收结果。项目文件可以放在私有仓库或用户管理的本地目录。

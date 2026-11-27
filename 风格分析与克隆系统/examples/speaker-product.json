@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "package_kind": "task",
+  "task_id": "T-speaker",
+  "mode": "change_theme",
+  "style_ref": {
+    "id": "SP-01",
+    "version": "1.0"
+  },
+  "required_rule_ids": [
+    "R01",
+    "R02",
+    "R03"
+  ],
+  "variables": [],
+  "delivery": {
+    "aspect_ratio": "1:1",
+    "quantity": 1,
+    "format": null,
+    "text_mode": "none",
+    "exact_text": []
+  },
+  "clauses": [
+    {
+      "id": "S01",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R01",
+      "zh": "以靛蓝为主色，唯一醒目的橙红落在侧面音量旋钮。",
+      "en": "Use indigo as the main color, with orange-red as the sole prominent accent at the side volume dial."
+    },
+    {
+      "id": "S02",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R02",
+      "zh": "将细节集中在旋钮、指示刻度与相邻网面，外围保持疏朗。",
+      "en": "Concentrate detail at the dial, tick marks, and adjacent grille and keep the surrounding area sparse."
+    },
+    {
+      "id": "S03",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R03",
+      "zh": "用粗细分明的靛蓝线条与平面墨块塑形，米白纸面保留轻微纤维。",
+      "en": "Build forms with indigo lines of distinct weights and flat ink shapes over lightly fibrous off-white paper."
+    },
+    {
+      "id": "C01",
+      "section": "character",
+      "priority": "must",
+      "rule_id": null,
+      "zh": "以一台圆角便携音箱为主体，呈现正面网面与侧面音量旋钮的连接关系。",
+      "en": "Feature a rounded portable speaker, depicting how the front grille meets the side volume dial."
+    },
+    {
+      "id": "E01",
+      "section": "environment",
+      "priority": "must",
+      "rule_id": null,
+      "zh": "场景为简洁的桌面陈列，后景只交代必要内容。",
+      "en": "Set the image in a spare tabletop display, using only essential background detail."
+    },
+    {
+      "id": "N01",
+      "section": "narrative",
+      "priority": "should",
+      "rule_id": null,
+      "zh": "用机身边缘和网面纹路把视线引向音量旋钮。",
+      "en": "Guide attention to the volume dial with the enclosure edge and the grille pattern."
+    }
+  ]
+}

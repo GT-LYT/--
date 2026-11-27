@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-01",
+  "version": "1.0",
+  "name": "局部暖色的双色编辑插画",
+  "status": "candidate",
+  "scope": "虚构案例，用于演示含单一主焦点的双色编辑插画。",
+  "parent": null,
+  "references": [
+    {
+      "id": "A",
+      "role": "style_reference",
+      "source": "虚构示意 A：社区车站，无实际图像"
+    },
+    {
+      "id": "B",
+      "role": "style_reference",
+      "source": "虚构示意 B：修表摊，无实际图像"
+    }
+  ],
+  "analysis": [
+    {
+      "module": "A1",
+      "state": "pending",
+      "observations": []
+    },
+    {
+      "module": "B1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅及主动作区域",
+          "text": "靛蓝主导全幅，唯一醒目的橙红出现在关键动作区域。"
+        },
+        {
+          "kind": "observation",
+          "ref_id": "B",
+          "region": "全幅及主动作区域",
+          "text": "靛蓝主导全幅，唯一醒目的橙红出现在关键动作区域。"
+        }
+      ]
+    },
+    {
+      "module": "B2",
+      "state": "pending",
+      "observations": []
+    },
+    {
+      "module": "B3",
+      "state": "pending",
+      "observations": []
+    },
+    {
+      "module": "B4",
+      "state": "pending",
+      "observations": []
+    },
+    {
+      "module": "C1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅及主动作区域",
+          "text": "大形由平面墨块和粗细有别的轮廓建立。"
+        },
+        {
+          "kind": "observation",
+          "ref_id": "B",
+          "region": "全幅及主动作区域",
+          "text": "大形由平面墨块和粗细有别的轮廓建立。"
+        }
+      ]
+    },
+    {
+      "module": "C2",
+      "state": "pending",
+      "observations": []
+    },
+    {
+      "module": "C3",
+      "state": "pending",
+      "observations": []
+    },
+    {
+      "module": "C4",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅及主动作区域",
+          "text": "米白纸底有轻微纤维，可在疏朗区看到。"
+        },
+        {
+          "kind": "observation",
+          "ref_id": "B",
+          "region": "全幅及主动作区域",
+          "text": "米白纸底有轻微纤维，可在疏朗区看到。"
+        }
+      ]
+    },
+    {
+      "module": "D1",
+      "state": "pending",
+      "observations": []
+    },
+    {
+      "module": "E1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅及主动作区域",
+          "text": "较多器物细节集中在关键动作区，外围保持低密度。"
+        },
+        {
+          "kind": "observation",
+          "ref_id": "B",
+          "region": "全幅及主动作区域",
+          "text": "较多器物细节集中在关键动作区，外围保持低密度。"
+        }
+      ]
+    },
+    {
+      "module": "E2",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅及主动作区域",
+          "text": "缩略图中橙红引导注意力落到关键动作。"
+        },
+        {
+          "kind": "observation",
+          "ref_id": "B",
+          "region": "全幅及主动作区域",
+          "text": "缩略图中橙红引导注意力落到关键动作。"
+        }
+      ]
+    },
+    {
+      "module": "E3",
+      "state": "pending",
+      "observations": []
+    }
+  ],
+  "rules": [
+    {
+      "id": "R01",
+      "modules": [
+        "B1",
+        "E2"
+      ],
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "含单一主焦点的插画",
+      "rule": "靛蓝承担主要形体与阴影，唯一醒目的橙红位于主焦点。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "检票口"
+        },
+        {
+          "ref_id": "B",
+          "region": "修表手势"
+        }
+      ],
+      "allowed_variation": "按题材替换焦点承担对象。",
+      "requires": [],
+      "excludes": [
+        "次要区域出现同等强度的橙红"
+      ],
+      "check": "缩略图中只有主焦点出现显著橙红。"
+    },
+    {
+      "id": "R02",
+      "modules": [
+        "C3",
+        "E1"
+      ],
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "有主焦点与外围空间",
+      "rule": "描绘集中在焦点附近，外围只保留必要轮廓与信息。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "票口周围与月台"
+        },
+        {
+          "ref_id": "B",
+          "region": "台面与后景"
+        }
+      ],
+      "allowed_variation": "允许调整焦点区形状和面积，保留清楚的疏密差。",
+      "requires": [
+        "R01"
+      ],
+      "excludes": [
+        "全画面均匀填满装饰"
+      ],
+      "check": "焦点附近线条和细节明显多于外围，同时必须信息可读。"
+    },
+    {
+      "id": "R03",
+      "modules": [
+        "C1",
+        "C4"
+      ],
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "使用平面编辑插画媒介",
+      "rule": "粗细分明的靛蓝线条与平面墨块塑形，米白纸面保留轻微纸纤维。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "墙面与月台边缘"
+        },
+        {
+          "ref_id": "B",
+          "region": "台面墨块与纸底"
+        }
+      ],
+      "allowed_variation": "可调整线条密度与颗粒强度，保留主要造型机制。",
+      "requires": [],
+      "excludes": [
+        "以仿摄影高光主导塑形"
+      ],
+      "check": "形体读作线描和平面墨块，纸纹轻微且不掩盖必要内容。"
+    }
+  ]
+}

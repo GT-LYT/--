@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "package_kind": "task",
+    "task_id": "T-library",
+    "mode": "change_theme",
+    "style_ref": {
+      "id": "SP-01",
+      "version": "1.0"
+    },
+    "required_rule_ids": [
+      "R01",
+      "R02",
+      "R03"
+    ],
+    "variables": [],
+    "language": "en"
+  },
+  "style": [
+    {
+      "id": "S01",
+      "priority": "must",
+      "rule_id": "R01",
+      "text": "Use indigo as the main color, with orange-red as the sole prominent accent at the bookmark tucked into the pages."
+    },
+    {
+      "id": "S02",
+      "priority": "must",
+      "rule_id": "R02",
+      "text": "Concentrate detail at the bookmark, page edges, and fingertips and keep the surrounding area sparse."
+    },
+    {
+      "id": "S03",
+      "priority": "must",
+      "rule_id": "R03",
+      "text": "Build forms with indigo lines of distinct weights and flat ink shapes over lightly fibrous off-white paper."
+    }
+  ],
+  "character": [
+    {
+      "id": "C01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "Feature an open book and a reader's hand, depicting the reader placing a bookmark to mark their place."
+    }
+  ],
+  "environment": [
+    {
+      "id": "E01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "Set the image in a reading table in a neighborhood library after rain, using only essential background detail."
+    }
+  ],
+  "narrative": [
+    {
+      "id": "N01",
+      "priority": "should",
+      "rule_id": null,
+      "text": "Lead the eye from the indigo title at the top to the open pages, then settle on the orange-red bookmark."
+    }
+  ],
+  "mood": [],
+  "technical": {
+    "delivery": {
+      "aspect_ratio": "4:5",
+      "quantity": 1,
+      "format": null,
+      "text_mode": "exact",
+      "exact_text": [
+        "雨后阅读日"
+      ]
+    },
+    "instructions": [
+      {
+        "id": "T01",
+        "priority": "must",
+        "rule_id": null,
+        "text": "Place the title at the top of the image in legible indigo lettering."
+      }
+    ]
+  }
+}
