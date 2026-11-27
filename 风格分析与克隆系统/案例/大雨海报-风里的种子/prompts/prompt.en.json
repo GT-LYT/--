@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "package_kind": "template",
+    "task_id": "T-STORM-TEMPLATE",
+    "mode": "apply",
+    "style_ref": {
+      "id": "SP-STORM-001",
+      "version": "0.1"
+    },
+    "required_rule_ids": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06"
+    ],
+    "variables": [
+      "theme",
+      "focus",
+      "characters",
+      "setting",
+      "motion",
+      "title",
+      "tagline"
+    ],
+    "language": "en"
+  },
+  "style": [
+    {
+      "id": "S01",
+      "priority": "must",
+      "rule_id": "R01",
+      "text": "Surround a vermilion and orange-gold dominant form with deep indigo and dark green surroundings. Reserve pale accents for structural highlights and narrative focal points."
+    },
+    {
+      "id": "S02",
+      "priority": "must",
+      "rule_id": "R02",
+      "text": "Let a giant near-circular form dominate the image. Converge radial lines slightly below the center and use a pale fan-shaped path to lead toward the small character group below."
+    },
+    {
+      "id": "S03",
+      "priority": "must",
+      "rule_id": "R03",
+      "text": "Place two small characters close together, dramatically smaller than the dominant form, with clear faces, gazes and interaction."
+    },
+    {
+      "id": "S04",
+      "priority": "must",
+      "rule_id": "R04",
+      "text": "Use painted two-dimensional color masses, fine decorative linework and uneven paper-like grain. Let environmental strokes interrupt selected silhouette edges while keeping faces clear."
+    },
+    {
+      "id": "S05",
+      "priority": "must",
+      "rule_id": "R05",
+      "text": "Interweave radial structure with diagonal motion strokes. Derive ornament from the current theme and reduce detail around faces and text."
+    },
+    {
+      "id": "S06",
+      "priority": "must",
+      "rule_id": "R06",
+      "text": "Place a large white hand-lettered title at the top and smaller legible white copy at the bottom, keeping text and the main image from overlapping."
+    }
+  ],
+  "character": [
+    {
+      "id": "C01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "The theme is {{theme}}, the giant dominant form is {{focus}}, and the two characters are {{characters}}."
+    }
+  ],
+  "environment": [
+    {
+      "id": "E01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "Set the scene in {{setting}}. Use {{motion}} for diagonal motion, with stronger foreground strokes and weaker distant detail."
+    }
+  ],
+  "narrative": [
+    {
+      "id": "N01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "Lead attention from the warm dominant form through the radial convergence toward the two characters below. Establish an emotional resting point through proximity, shared attention and connected gestures."
+    }
+  ],
+  "mood": [
+    {
+      "id": "M01",
+      "priority": "must",
+      "rule_id": null,
+      "text": "Create pressure through environmental motion and monumental scale, and convey companionship through the characters' proximity."
+    }
+  ],
+  "technical": {
+    "delivery": {
+      "aspect_ratio": "2:3",
+      "quantity": 1,
+      "format": null,
+      "text_mode": "exact",
+      "exact_text": [
+        "{{title}}",
+        "{{tagline}}"
+      ]
+    },
+    "instructions": [
+      {
+        "id": "T01",
+        "priority": "must",
+        "rule_id": null,
+        "text": "Use {{title}} as the top title and {{tagline}} as the bottom copy. Add no other readable copy or logos."
+      }
+    ]
+  }
+}

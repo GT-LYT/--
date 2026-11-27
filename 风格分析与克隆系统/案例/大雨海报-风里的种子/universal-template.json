@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "package_kind": "template",
+  "task_id": "T-STORM-TEMPLATE",
+  "mode": "apply",
+  "style_ref": {
+    "id": "SP-STORM-001",
+    "version": "0.1"
+  },
+  "required_rule_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06"
+  ],
+  "variables": [
+    "theme",
+    "focus",
+    "characters",
+    "setting",
+    "motion",
+    "title",
+    "tagline"
+  ],
+  "delivery": {
+    "aspect_ratio": "2:3",
+    "quantity": 1,
+    "format": null,
+    "text_mode": "exact",
+    "exact_text": [
+      "{{title}}",
+      "{{tagline}}"
+    ]
+  },
+  "clauses": [
+    {
+      "id": "S01",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R01",
+      "zh": "以深靛蓝、墨绿环境包围朱红橙金主形，浅色强调结构亮点与叙事焦点。",
+      "en": "Surround a vermilion and orange-gold dominant form with deep indigo and dark green surroundings. Reserve pale accents for structural highlights and narrative focal points."
+    },
+    {
+      "id": "S02",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R02",
+      "zh": "巨型近圆主形占据主要画面，放射线汇聚在中心偏下，浅色扇形路径引向下方小角色组。",
+      "en": "Let a giant near-circular form dominate the image. Converge radial lines slightly below the center and use a pale fan-shaped path to lead toward the small character group below."
+    },
+    {
+      "id": "S03",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R03",
+      "zh": "两个小角色相互靠近，与主形形成悬殊尺度差，脸部、目光和互动清楚。",
+      "en": "Place two small characters close together, dramatically smaller than the dominant form, with clear faces, gazes and interaction."
+    },
+    {
+      "id": "S04",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R04",
+      "zh": "采用二维手绘色块、细线装饰与不均匀纸感颗粒，环境笔触局部打断主体边缘，面部保持清楚。",
+      "en": "Use painted two-dimensional color masses, fine decorative linework and uneven paper-like grain. Let environmental strokes interrupt selected silhouette edges while keeping faces clear."
+    },
+    {
+      "id": "S05",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R05",
+      "zh": "放射结构与斜向运动笔触交织，装饰取自当前主题，人物脸部和文字周围降低密度。",
+      "en": "Interweave radial structure with diagonal motion strokes. Derive ornament from the current theme and reduce detail around faces and text."
+    },
+    {
+      "id": "S06",
+      "section": "style",
+      "priority": "must",
+      "rule_id": "R06",
+      "zh": "顶部安排白色书写大标题，底部安排较小的清楚白字，文字与主视觉互不遮挡。",
+      "en": "Place a large white hand-lettered title at the top and smaller legible white copy at the bottom, keeping text and the main image from overlapping."
+    },
+    {
+      "id": "C01",
+      "section": "character",
+      "priority": "must",
+      "rule_id": null,
+      "zh": "主题为{{theme}}，巨型主形为{{focus}}，两个角色为{{characters}}。",
+      "en": "The theme is {{theme}}, the giant dominant form is {{focus}}, and the two characters are {{characters}}."
+    },
+    {
+      "id": "E01",
+      "section": "environment",
+      "priority": "must",
+      "rule_id": null,
+      "zh": "环境为{{setting}}，以{{motion}}承担斜向运动，近处笔触较强，远处细节较弱。",
+      "en": "Set the scene in {{setting}}. Use {{motion}} for diagonal motion, with stronger foreground strokes and weaker distant detail."
+    },
+    {
+      "id": "N01",
+      "section": "narrative",
+      "priority": "must",
+      "rule_id": null,
+      "zh": "由暖色主形经放射汇聚点引向下方两位角色，以靠近、共同注视和动作联系建立情感停留点。",
+      "en": "Lead attention from the warm dominant form through the radial convergence toward the two characters below. Establish an emotional resting point through proximity, shared attention and connected gestures."
+    },
+    {
+      "id": "M01",
+      "section": "mood",
+      "priority": "must",
+      "rule_id": null,
+      "zh": "通过环境运动和巨大尺度形成压力，通过角色的相互靠近表现陪伴。",
+      "en": "Create pressure through environmental motion and monumental scale, and convey companionship through the characters' proximity."
+    },
+    {
+      "id": "T01",
+      "section": "technical",
+      "priority": "must",
+      "rule_id": null,
+      "zh": "顶端标题使用{{title}}，底部文案使用{{tagline}}，不添加其他可读文案或徽标。",
+      "en": "Use {{title}} as the top title and {{tagline}} as the bottom copy. Add no other readable copy or logos."
+    }
+  ]
+}

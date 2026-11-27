@@ -1,0 +1,24 @@
+{
+  "style_profile": "SP-STORM-001@0.1",
+  "status": "generated_unreviewed",
+  "image": "windborne-seeds.png",
+  "image_sha256": "fe71cc9117ff1ac838fc902a95a6bde166c060267433731e78346beed1e26a69",
+  "image_size_px": [
+    1024,
+    1536
+  ],
+  "generation_backend": "OpenAI image_gen",
+  "reference": "本轮对话上传的《大雨》海报，仅用于风格与版式参考",
+  "visual_review": {
+    "warm_cool_separation": "pass",
+    "radial_seed_head": "pass",
+    "two_related_small_characters": "pass",
+    "hand_painted_texture": "pass",
+    "title_and_tagline": "visually_pass_needs_human_confirmation",
+    "cross_backend_repeatability": "unknown"
+  },
+  "limitations": [
+    "单幅参考得到候选风格档案",
+    "不同生成后端或种子可能改变纹理和文字准确性"
+  ]
+}

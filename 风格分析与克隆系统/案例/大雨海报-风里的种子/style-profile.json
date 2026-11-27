@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0",
+  "id": "SP-STORM-001",
+  "version": "0.1",
+  "name": "冷暖包围与放射叙事手绘海报",
+  "status": "candidate",
+  "scope": "基于单幅参考的作品级候选档案，适用于巨型主形与小型双角色关系主导的幻想叙事海报。",
+  "parent": null,
+  "references": [
+    {
+      "id": "A",
+      "role": "style_reference",
+      "source": "本轮用户上传的《大雨》海报"
+    },
+    {
+      "id": "A-layout",
+      "role": "layout_reference",
+      "source": "同一张海报的图文层级"
+    }
+  ],
+  "rules": [
+    {
+      "id": "R01",
+      "name": "冷暖分工",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "档案适用范围内",
+      "rule": "深靛蓝与墨绿环境包围朱红橙金主形，浅色集中于结构亮点和叙事焦点。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "全幅冷色背景、中央红伞"
+        }
+      ],
+      "allowed_variation": "根据新主题替换承担视觉功能的主体、环境与装饰。核心关系改变时创建派生版本。",
+      "requires": [],
+      "excludes": [],
+      "check": "缩略图中暖色主形突出，背景亮点不争夺主位。"
+    },
+    {
+      "id": "R02",
+      "name": "放射构图",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "档案适用范围内",
+      "rule": "巨型近圆主形与偏下的放射汇聚点组织构图，浅色扇形路径引向下方小型角色组。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "伞面、中心伞轴及向下的灰白扇形"
+        }
+      ],
+      "allowed_variation": "根据新主题替换承担视觉功能的主体、环境与装饰。核心关系改变时创建派生版本。",
+      "requires": [
+        "R01"
+      ],
+      "excludes": [],
+      "check": "主形、汇聚点和角色组形成连续观看路径。"
+    },
+    {
+      "id": "R03",
+      "name": "尺度与叙事",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "档案适用范围内",
+      "rule": "巨大主形与相互靠近的两个小角色形成尺度反差，人物脸部和动作清楚。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "画面中下方两位靠近且仰视的角色"
+        }
+      ],
+      "allowed_variation": "根据新主题替换承担视觉功能的主体、环境与装饰。核心关系改变时创建派生版本。",
+      "requires": [
+        "R02"
+      ],
+      "excludes": [],
+      "check": "角色相互关系可读，尺度差明显，脸部未被纹理吞没。"
+    },
+    {
+      "id": "R04",
+      "name": "绘画与质感",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "档案适用范围内",
+      "rule": "以二维手绘色块、细线装饰和不均匀颗粒表现形体，主体轮廓局部受环境笔触打断。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "伞面细线、全幅颗粒和伞缘飞溅"
+        }
+      ],
+      "allowed_variation": "根据新主题替换承担视觉功能的主体、环境与装饰。核心关系改变时创建派生版本。",
+      "requires": [],
+      "excludes": [],
+      "check": "大形清楚，细节随对象和区域变化，纹理未等量铺满。"
+    },
+    {
+      "id": "R05",
+      "name": "运动与疏密",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "condition": "档案适用范围内",
+      "rule": "主形的放射结构与环境的斜向运动笔触交织，角色脸部和文字附近降低密度。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "伞骨放射线、斜向雨痕、人物面部"
+        }
+      ],
+      "allowed_variation": "根据新主题替换承担视觉功能的主体、环境与装饰。核心关系改变时创建派生版本。",
+      "requires": [
+        "R02",
+        "R04"
+      ],
+      "excludes": [],
+      "check": "结构线和运动线功能不同，密集细节仍有局部停顿。"
+    },
+    {
+      "id": "R06",
+      "name": "海报文字",
+      "category": "style",
+      "variability": "conditional",
+      "priority": "must",
+      "condition": "含标题和底部文案的竖版海报",
+      "rule": "顶部使用醒目的白色书写标题，底部使用较小且清楚的白色文案。",
+      "evidence": [
+        {
+          "ref_id": "A",
+          "region": "顶部大雨标题和下方两行文案"
+        }
+      ],
+      "allowed_variation": "根据新主题替换承担视觉功能的主体、环境与装饰。核心关系改变时创建派生版本。",
+      "requires": [],
+      "excludes": [],
+      "check": "标题、主视觉、底部文字有层级且互不遮挡。"
+    }
+  ],
+  "analysis": [
+    {
+      "module": "A1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅",
+          "text": "手绘动画式人物、大面积绘画色块、细密装饰与图文组成叙事海报。"
+        },
+        {
+          "kind": "inference",
+          "ref_id": "A",
+          "region": "伞与下方人物",
+          "text": "环境压迫与角色陪伴构成可迁移的情绪关系，这是视觉解释。"
+        }
+      ]
+    },
+    {
+      "module": "B1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "背景与伞面",
+          "text": "深蓝绿背景包围朱红、橙黄的巨大伞面，人物肤色形成较小暖色区。"
+        }
+      ]
+    },
+    {
+      "module": "B2",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "伞轴及左侧伞面",
+          "text": "中心伞轴、左侧橙黄区及浅色放射带较亮，无法确认统一物理光源。"
+        }
+      ]
+    },
+    {
+      "module": "B3",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "主图区",
+          "text": "近圆伞面与放射结构居中，人物集中在下方，标题在顶部。"
+        }
+      ]
+    },
+    {
+      "module": "B4",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "伞与人物",
+          "text": "伞面接近画面宽度，人物组合明显较小。"
+        }
+      ]
+    },
+    {
+      "module": "C1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅",
+          "text": "平涂式色块叠加细描线与不均匀笔触，人物有概括且夸张的五官。"
+        }
+      ]
+    },
+    {
+      "module": "C2",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "伞缘及人物面部",
+          "text": "伞的大轮廓清楚，边缘局部被浅色水痕打断，人物眼睛和嘴部可辨。"
+        }
+      ]
+    },
+    {
+      "module": "C3",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "伞面与人物",
+          "text": "伞面布满细线装饰，人物五官集中表达表情，环境以符号化细节表现。"
+        }
+      ]
+    },
+    {
+      "module": "C4",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "色块表面",
+          "text": "可见颗粒、斑驳和擦痕式纹理，具体材料和制作工艺未知。"
+        }
+      ]
+    },
+    {
+      "module": "D1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "下方人物组",
+          "text": "两位角色相互靠近并向上看，伞面上方另伸出一只手。"
+        }
+      ]
+    },
+    {
+      "module": "E1",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅",
+          "text": "伞面及周边雨线密集，脸部与文字周围相对简化。"
+        }
+      ]
+    },
+    {
+      "module": "E2",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "中央至下方",
+          "text": "高饱和大伞面和顶部白字吸引注意，放射结构将注意引到伞轴及人物。"
+        }
+      ]
+    },
+    {
+      "module": "E3",
+      "state": "active",
+      "observations": [
+        {
+          "kind": "observation",
+          "ref_id": "A",
+          "region": "全幅",
+          "text": "冷暖、巨大与微小、圆面稳定与雨线运动形成多重反差。"
+        }
+      ]
+    }
+  ]
+}
